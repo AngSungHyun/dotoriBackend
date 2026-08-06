@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+storage/*
+!storage/.gitkeep
+coverage/
+*.log
+.DS_Store
+depoly/*
+*.md
+*.pdf

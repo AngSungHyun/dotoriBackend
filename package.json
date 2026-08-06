@@ -1,0 +1,53 @@
+{
+  "name": "dotori-api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "개인 맞춤형 AI 동화책 서비스 API",
+  "engines": {
+    "node": ">=20"
+  },
+  "overrides": {
+    "ajv": "8.20.0"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "node dist/server.js",
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run src",
+    "migrate": "tsx src/database/migrate.ts",
+    "check": "npm run build && npm test"
+  },
+  "dependencies": {
+    "@mikro-orm/core": "6.6.16",
+    "@mikro-orm/migrations": "6.6.16",
+    "@mikro-orm/mysql": "6.6.16",
+    "argon2": "latest",
+    "cookie-parser": "latest",
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "express-rate-limit": "latest",
+    "helmet": "latest",
+    "jsonwebtoken": "latest",
+    "multer": "latest",
+    "openai": "6.49.0",
+    "sharp": "latest",
+    "swagger-ui-express": "^5.0.1",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "latest",
+    "@types/cors": "latest",
+    "@types/express": "latest",
+    "@types/jsonwebtoken": "latest",
+    "@types/multer": "latest",
+    "@types/node": "latest",
+    "@types/supertest": "latest",
+    "@types/swagger-ui-express": "^4.1.8",
+    "supertest": "latest",
+    "tsx": "latest",
+    "typescript": "latest",
+    "vitest": "latest"
+  }
+}
